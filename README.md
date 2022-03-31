@@ -8,9 +8,9 @@
 
 ## Prerequisites
 
-* Install **Git** and **SSH**: [https://www.atlassian.com/git/tutorials/install-git](https://www.atlassian.com/git/tutorials/install-git)
-* Setup an **SSH key**: [https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key](https://support.atlassian.com/bitbucket-cloud/docs/set-up-an-ssh-key)
-* **Python (>= v3.7.11)**
+* Install **Git** and **SSH**: [https://github.com/git-guides/install-git](https://github.com/git-guides/install-git)
+* Setup an **SSH key**: [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+* **Miniconda (v3)** and **Python (>= v3.7.11)**: [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/miniconda.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/miniconda.md)
 * For **NVIDIA GPU**:
     * **NVIDIA GPU driver (at least >= v418.39)** - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/nvidia-driver-linux.md)
     * **NVIDIA CUDA (v10.1)** - [https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/cuda-linux.md](https://github.com/bybatkhuu/wiki/blob/main/manuals/installs/cuda-linux.md)
