@@ -1,0 +1,44 @@
+<mxfile>
+    <diagram id="UdZMQtXprMDYVMtoPEUQ" name="Page-1">
+        <mxGraphModel dx="1476" dy="1032" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="FaissBase" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="90" width="246" height="450" as="geometry">
+                        <mxRectangle x="260" y="210" width="90" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="+ MAX_N_NEIGHBORS: int&#10;+ LOW_LIM_N_MIN_VEC: int&#10;+ LOW_LIM_N_ITER: int&#10;+ LOW_LIM_N_REDO: int&#10;+ LOW_LIM_K: int&#10;&#10;+ db_vectors: np.ndarray&#10;+ db_labels: list&#10;+ index: faiss.swigfaiss_avx2...&#10;+ kmeans: faiss.Kmeans&#10;+ max_n_neighbors: int&#10;+ min_n_vectors: int&#10;+ k: int&#10;+ n_redo: int&#10;+ n_iter: int&#10;+ n_cells: int&#10;+ gpu: bool&#10;+ is_trained: bool&#10;+ verbose: bool " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;" parent="2" vertex="1">
+                    <mxGeometry y="26" width="246" height="274" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;" parent="2" vertex="1">
+                    <mxGeometry y="300" width="246" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="+ add_vectors(np.ndarray): bool&#10;+ _del_duplicate_vectors(np.ndarray): bool&#10;+ search_similars(np.ndarray, int, int): tuple&#10;+ _cal_n_search_cells(): int&#10;+ _train_index(int, int): bool&#10;+ _cal_n_cells(): int&#10;+ train(**dict): bool&#10;+ is_db_vectors_enough(): bool&#10;+ cluster(np.ndarray): list" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;" parent="2" vertex="1">
+                    <mxGeometry y="308" width="246" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="8" target="3" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="460" y="280" as="sourcePoint"/>
+                        <mxPoint x="630" y="340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="FaissKmeans" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="170" width="230" height="420" as="geometry">
+                        <mxRectangle x="260" y="210" width="90" height="26" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="+ FAISS_FILES_SUFFIX: str&#10;+ LOW_LIM_MAX_K: int&#10;+ UP_LIMIT_MAX_K: int&#10;&#10;+ model_name: str&#10;+ model_dir: str&#10;+ model_files_meta: dict" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;" parent="7" vertex="1">
+                    <mxGeometry y="26" width="230" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;" parent="7" vertex="1">
+                    <mxGeometry y="140" width="230" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="+  is_model_files_exist(str, str, bool): bool&#10;+ _is_db_vector_files_exist(str, str): bool&#10;+ _is_meta_files_exist(str, str): bool&#10;+ _get_files_meta(str, str): dict&#10;&#10;+ load(bool): bool&#10;+ _load_db_vectors(): bool&#10;+ add_vectors(np.ndarray): bool&#10;+ delete(bool): bool&#10;+ _delete_db_vectors(): bool&#10;+ _delete_meta_files(): bool&#10;+ save(bool): bool&#10;+ _save_db_vectors(): bool&#10;+ _save_meta_files(): bool&#10;+ train_auto_k(str, int): bool&#10;+ _get_elbow_k(int): int&#10;+ _get_silhouette_k(int): int&#10;+ train(**dict): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Roboto;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRoboto;" parent="7" vertex="1">
+                    <mxGeometry y="148" width="230" height="272" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

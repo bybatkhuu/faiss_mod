@@ -1,0 +1,6 @@
+el-logging==0.2.21
+pydantic==1.8.1
+matplotlib==3.3.0
+scipy==1.4.1
+scikit-learn==0.23.1
+kneed==0.7.0
